@@ -1,0 +1,13 @@
+Each folder is identified by the PDB ID of the protein. It contains the input GRO file, the topology file, and a folder that includes all the ITP files referenced in the topology.
+
+The files with the simulation parameters are included in the mdp_files folder; you should adapt them in order to perform:
+- a max number of 5000 minimization steps;
+- 0.5 ns of NVT equilibration;
+- 1 ns of NPT equilibration;
+- 200 ns of unrestrained MD (at least).
+
+Modify the parameter files to save the XTC trajectory file every 50 ps. Set the temperature at 310K.
+
+Also, you have to create the appropriate index file including the groups for the thermostat (one for the solute, one for the solvent+ions); use the resulting index groups in the MDP files.
+
+For each step of minimization, NVT equilibrazion, and NPT equilibration, make sure to compute the appropriate observables to verify whether the minimization/equilibration is successful. 
