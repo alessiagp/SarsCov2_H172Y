@@ -23,6 +23,7 @@ Exam project for Computational Biophysics course done by Alessia Guadagnin Patta
 - Power spectral density analysis
 - Clustering
 - PCA
+- RMSF calculated on the first principal component
 
 
 ## Project abstract
@@ -38,3 +39,8 @@ Clustering and PCA were ultimately implemented to highlight the presence of any 
 Very few quantitative conclusions could be obtained mostly because of the poor sampling that could be achieved with the available resources.
 
 ## Structure of the repository
+
+- final report and the related supporting information
+- `structures` folder, with data for the three structures used in the project
+- `Scripts` folder, with the Tcl/Tk scripts used in VMD for the visual inspection
+- `jupyter-notebooks`, with the notebooks used during the analyses
